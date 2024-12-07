@@ -10,8 +10,7 @@ body {
 
 @font-face {
   font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Regular.woff2),
-    url(../fonts/OpenSans-Regular.woff),
+  src: url(../fonts/OpenSans-Regular.woff2), url(../fonts/OpenSans-Regular.woff),
     url(../fonts/OpenSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
@@ -19,8 +18,7 @@ body {
 
 @font-face {
   font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Bold.woff2),
-    url(../fonts/OpenSans-Bold.woff),
+  src: url(../fonts/OpenSans-Bold.woff2), url(../fonts/OpenSans-Bold.woff),
     url(../fonts/OpenSans-Bold.ttf);
   font-weight: 700;
   font-style: bold;
@@ -68,7 +66,7 @@ body {
 }
 
 .logo-link-img {
-  width: 182px;
+  width: 179px;
 }
 
 .page-title-name {
@@ -154,7 +152,7 @@ body {
 .trend-post {
   display: flex;
   align-items: flex-end;
-  width: calc(100% / 4 - 2px);
+  width: calc((100% / 4) - 2px);
   min-height: 315px;
   position: relative;
 }
@@ -162,9 +160,11 @@ body {
 .trend-text {
   border: 3px solid #b59f5b;
   margin: auto 20px 15px;
-  padding: 36px 45px 33px;
-  max-height: 300px;
+  padding-top: 39px;
+  padding-bottom: 36px;
+  padding-left: 33px;
   z-index: 2;
+  width: 100%;
 }
 
 .trend-text-teg {
@@ -276,7 +276,7 @@ body {
 .post-img {
   width: 330px;
 
-  min-width: 330px;
+  min-width: 290px;
   max-width: 392px;
   min-height: 294px;
   max-height: 303px;
@@ -728,9 +728,11 @@ p {
   box-sizing: border-box;
   flex-direction: column;
   border: 3px solid #b59f5b;
-  height: 267px;
+  min-height: 267px;
   width: 330px;
-  padding: 50px 20px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: -29px;
 }
 
@@ -1121,33 +1123,39 @@ p {
   .trend-posts {
     flex-wrap: wrap;
     display: flex;
+    width: 100%;
   }
 
   .trend-post {
     width: calc((100% / 2) - 2px);
   }
 
+  .trend-text {
+    width: 100%;
+  }
+
   .container-second {
-    width: 700px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .post {
     flex-direction: column;
-    width: 392px;
+    min-width: 392px;
   }
 
   .post-img {
-    height: 300px;
-    width: 390px;
+    min-height: 300px;
+    min-width: 390px;
   }
 
   .post:after {
     content: "";
     display: block;
     position: relative;
-    width: 392px;
+    min-width: 392px;
     height: 3px;
     background: #eeeeee;
     margin-top: 15px;
@@ -1163,6 +1171,10 @@ p {
 
   .news-text-teg {
     margin-top: 16px;
+  }
+
+  .news-title {
+    width: 100%;
   }
 
   .text {
@@ -1182,9 +1194,19 @@ p {
   }
 
   .container-product {
-    width: 700px;
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  picture {
+    width: 100%;
+  }
+
+  .product-img {
+    width: 100%;
+    padding-left: 23px;
+    padding-right: 23px;
   }
 
   .product-title {
@@ -1195,18 +1217,29 @@ p {
   .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .product {
+    width: 100%;
   }
 
   .product-content {
-    width: calc(100% / 2 - 70px);
+    width: calc((100% / 2) - 33px);
     margin-bottom: 28px;
     flex-grow: 0;
   }
 
+  .product-descr {
+    width: 100%;
+  }
+
   .container-footer {
-    width: 732px;
+    width: 100%;
     margin-top: 22px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .social-address {
@@ -1236,7 +1269,6 @@ p {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-    /*     height: 484px; */
     position: relative;
   }
 
@@ -1271,6 +1303,7 @@ p {
 
   .container-trend {
     width: 100%;
+    display: flex;
   }
 
   .trend {
@@ -1279,23 +1312,25 @@ p {
 
   .trend-posts {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .trend-post {
     width: 100%;
+    padding: auto 15px 15px;
   }
 
   .container-second {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .main {
-    width: 330px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -1306,7 +1341,7 @@ p {
 
   .post {
     display: flex;
-    width: 330px;
+    width: 100%;
     flex-direction: column;
     margin-bottom: 55px;
   }
@@ -1315,7 +1350,7 @@ p {
     content: "";
     display: block;
     position: relative;
-    width: 331px;
+    width: 100%;
     height: 3px;
     background: #eeeeee;
     margin-top: 21px;
@@ -1338,6 +1373,10 @@ p {
     margin-bottom: 20px;
   }
 
+  .news-title {
+    width: 100%;
+  }
+
   .text {
     margin-top: 22px;
     font-size: 14px;
@@ -1345,54 +1384,104 @@ p {
   }
 
   .aside-posts {
-    margin-left: 15px;
+    width: 100%;
+  }
+
+  .aside-mini-posts {
     width: 330px;
+  }
+
+  .section-search {
+    margin: 0 auto;
   }
 
   .field-search {
-    width: 282px;
+    min-width: 282px;
+  } 
+
+  .newsletter {
+    text-align: center;
   }
 
   .field-newsletter {
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
+    min-width: 290px;
   }
 
   .newsletter-button {
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
+    min-width: 290px;
   }
 
   .section-tag {
-    width: 330px;
+    width: 100%;
     box-sizing: border-box;
     flex-grow: 1;
   }
 
   .tag-list {
-    width: 330px;
+    max-width: 330px;
+    min-width: 290px;
     display: flex;
+    margin: 0 auto;
   }
 
   .tag-link {
     padding: 7px 11px;
   }
 
-  .container-product {
+  .section-topics {
+    margin: 0 auto;
+  }
+
+  .topic-list {
     width: 330px;
+  }
+
+  .container-product {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  picture {
+    width: 100%;
+  }
+
+  .product-img {
+    width: 100%;
+    padding-left: 21px;
+    padding-right: 21px;
   }
 
   .products {
     display: flex;
-    flex-direction: column;
-    width: 330px;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .product {
+    width: 100%;
   }
 
   .product-content {
+    width: 100%;
     margin-bottom: 25px;
+    flex-grow: 0;
+  }
+
+  .product-descr {
     width: 100%;
   }
 
   .container-footer {
-    width: 369px;
+    width: 100%;
+    margin-top: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .social-address {
@@ -1406,11 +1495,13 @@ p {
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
-  .container-trend {
-    width: calc((100% / 2) - 3px);
-  }
-
   .trend-post {
-    padding: 20px 10px 10px;
+    width: calc((100% / 2) - 2px);
+  }
+  
+  .trend-posts {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
   }
 }
