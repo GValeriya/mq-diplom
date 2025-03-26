@@ -274,13 +274,10 @@ body {
 }
 
 .post-img {
-  width: 330px;
-
-  min-width: 290px;
-  max-width: 392px;
-  min-height: 294px;
-  max-height: 303px;
+  width: 381px;  
+  min-height: 292px; 
   background-color: #eff6f1;
+  object-fit: cover; 
 }
 
 .news-text {
@@ -313,7 +310,7 @@ body {
 }
 
 .news-title {
-  width: 350px;
+  width: 350px; 
   margin-top: 0px;
 }
 
@@ -406,7 +403,7 @@ p {
 
 .aside-article {
   box-sizing: border-box;
-  max-width: 270px;
+  width: 270px;
   display: flex;
   padding-top: 5px;
 }
@@ -600,7 +597,7 @@ p {
   color: #0f0d0e;
   margin-right: 5px;
   border: 3px solid #f4f3f1;
-  padding: 3px 12px;
+  padding: 4px 11px;
   box-sizing: border-box;
   height: 29px;
   align-items: center;
@@ -725,14 +722,16 @@ p {
 
 .product {
   display: flex;
+  flex: 1;
   box-sizing: border-box;
   flex-direction: column;
   border: 3px solid #b59f5b;
-  min-height: 267px;
+  /* min-height: 267px; */
   width: 330px;
   padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 26px;
   margin-top: -29px;
 }
 
@@ -756,6 +755,8 @@ p {
   line-height: 22px;
   color: #0f0d0e;
   font-weight: 400;
+
+  padding-bottom: 25px;
 }
 
 .product-text {
@@ -769,7 +770,6 @@ p {
 .product-footer {
   justify-content: space-between;
   display: flex;
-  margin-top: 25px;
   align-items: center;
 }
 
@@ -1098,7 +1098,7 @@ p {
   .container-first {
     width: 100%;
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 35px; 
   }
 
   .logo-link-img {
@@ -1138,24 +1138,24 @@ p {
     width: 100%;
     display: flex;
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 35px; 
   }
 
   .post {
     flex-direction: column;
-    min-width: 392px;
+
+    max-width: 100%; 
   }
 
   .post-img {
-    min-height: 300px;
-    min-width: 390px;
-  }
+    width: 100%;
+  } 
 
   .post:after {
     content: "";
     display: block;
     position: relative;
-    min-width: 392px;
+    min-width: 265px;
     height: 3px;
     background: #eeeeee;
     margin-top: 15px;
@@ -1190,7 +1190,7 @@ p {
   }
 
   .tag-link {
-    padding: 6px 12px;
+    padding: 4px 11px;
   }
 
   .container-product {
@@ -1219,6 +1219,8 @@ p {
     flex-wrap: wrap;
     padding-left: 0px;
     padding-right: 0px;
+
+    gap: 23px;
   }
 
   .product {
@@ -1226,7 +1228,7 @@ p {
   }
 
   .product-content {
-    width: calc((100% / 2) - 33px);
+    width: calc((100% - 23px) / 2);
     margin-bottom: 28px;
     flex-grow: 0;
   }
@@ -1318,7 +1320,7 @@ p {
 
   .trend-post {
     width: 100%;
-    padding: auto 15px 15px;
+    padding: 15px;
   }
 
   .container-second {
@@ -1358,7 +1360,6 @@ p {
 
   .post-img {
     width: 100%;
-    height: 253px;
   }
 
   .news-text {
@@ -1388,16 +1389,30 @@ p {
   }
 
   .aside-mini-posts {
-    width: 330px;
+    width: 100%;
   }
+
+  .aside-article {
+    width: 100%;
+  }
+
+  /* .aside-img {
+    width: 100%;
+  } */
 
   .section-search {
     margin: 0 auto;
   }
 
   .field-search {
-    min-width: 282px;
+    width: 282px;    
+    /* flex-grow: 1;    */
   } 
+
+  /* .search-button {
+    flex-shrink: 0;
+    flex-grow: 0;
+  }   */
 
   .newsletter {
     text-align: center;
@@ -1405,39 +1420,39 @@ p {
 
   .field-newsletter {
     width: 100%;
-    max-width: 330px;
-    min-width: 290px;
   }
 
   .newsletter-button {
     width: 100%;
-    max-width: 330px;
-    min-width: 290px;
   }
 
   .section-tag {
     width: 100%;
-    box-sizing: border-box;
-    flex-grow: 1;
   }
 
   .tag-list {
-    max-width: 330px;
-    min-width: 290px;
-    display: flex;
-    margin: 0 auto;
+    width: 100%;
+    display: flex; 
   }
 
   .tag-link {
-    padding: 7px 11px;
+    padding: 4px 11px;
   }
 
-  .section-topics {
-    margin: 0 auto;
+  .tag-item:nth-child(n + 4) {
+    margin-top: 0px;
+  } 
+
+  .tag-item {
+    margin-bottom: 5px;
   }
 
   .topic-list {
-    width: 330px;
+    width: 100%;
+  }
+
+  .list-topic-count::after {
+    width: 100%;
   }
 
   .container-product {
@@ -1504,4 +1519,8 @@ p {
     display: flex;
     width: 100%;
   }
-}
+
+  .trend-title {
+    word-wrap: break-word;
+  } 
+} 
